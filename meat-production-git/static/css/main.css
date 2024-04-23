@@ -1,0 +1,382 @@
+
+
+/* first row start */
+
+section {
+    margin: 0 auto;
+    margin-top: 2.5%;
+    max-width: 1300px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container{
+    display: inline;
+}
+
+.row {
+    padding-bottom: 30px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* #anim {
+    animation: myAnim 5s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+} */
+
+#main>.row>h1 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 6.5em;
+
+    line-height: 50%;
+    color: rgb(148, 85, 85);
+}
+
+#main>.row>h2 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 3em;
+
+    line-height: normal;
+    color: rgb(184, 139, 121);
+}
+
+
+
+/* first row end */
+
+/* second row start */
+
+p {
+    margin: 0;
+}
+
+#second-row div div p {
+    font-size: 200%;
+}
+#second-row div div #h1 {
+    font-size: 250%;
+}
+
+.sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* second row end */
+
+#bottom div div {
+    margin-bottom: 30px;
+}
+
+
+.card {
+    margin-bottom: 10px;
+    -webkit-tap-highlight-color: transparent;
+    background: rgba(35, 39, 42, 1);
+    color: rgb(148, 85, 85);
+}
+.card-body {
+    color: rgba(87, 87, 87, 1);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+
+    #main>.row>h1 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 4em;
+        line-height: 10%;
+
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+    #second-row div div p {
+        font-size:150%;
+    }
+    #second-row div div #h1 {
+        font-size: 200%;
+    }
+
+    #second-row div div #h2 {
+        font-size: 150%;
+    }
+
+    section {
+        margin: 2.5%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 4em;
+
+        line-height: 1px;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+    #second-row div div p {
+        font-size: 135%;
+    }
+    #second-row div div #h1 {
+        font-size: 180%;
+    }
+    #second-row div div #h2 {
+        font-size: 135%;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        font-size: 3.5em;
+
+        line-height: 35%;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+    #second-row div div p {
+        font-size: 120%;
+    }
+    #second-row div div #h1 {
+        font-size: 150%;
+    }
+
+    #second-row div div #h2 {
+        font-size: 120%;
+    }
+
+
+
+
+}
+
+@media (max-width: 700px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        font-size: 3em;
+
+        line-height: 1px;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+
+    }
+
+    #second-row div div p {
+        font-size: 110%;
+    }
+    #second-row div div #h1 {
+        font-size: 120%;
+    }
+    #second-row div div #h2 {
+        font-size: 110%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        font-size: 2.5em;
+
+        line-height: 1px;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+
+    }
+
+    #second-row div div p {
+        font-size: 90%;
+    }
+    #second-row div div #h1 {
+        font-size: 100%;
+    }
+    #second-row div div #h2 {
+        font-size: 90%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #main>.row>h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+
+        line-height: 1px;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 0.8em;
+
+    }
+
+    #second-row div div p {
+        font-size: 80%;
+    }
+    #second-row div div #h1 {
+        font-size: 100%;
+    }
+    #second-row div div #h2 {
+        font-size: 80%;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 450px) {
+    #main>.row>h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8em;
+
+        line-height: 1px;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 3px;
+        text-align: center;
+        font-size: 0.8em;
+
+    }
+
+    #second-row div div p {
+        font-size: 70%;
+        margin-bottom: 0;
+    }
+    #second-row div div #h1 {
+        font-size: 90%;
+    }
+
+    #second-row div div #h2 {
+        font-size: 70%;
+    }
+
+    #second-row div div {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 1px;
+        text-align: center;
+        font-size: 1.5em;
+
+        line-height: 40%;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 3px;
+        text-align: center;
+        font-size: 0.6em;
+
+    }
+
+    #second-row div div p {
+        font-size: 55%;
+        margin-bottom: 0;
+    }
+    #second-row div div #h1 {
+        font-size: 80%;
+    }
+
+    #second-row div div #h2 {
+        font-size: 55%;
+    }
+
+    #second-row div div {
+        margin-bottom: 0;
+    }
+
+}
+

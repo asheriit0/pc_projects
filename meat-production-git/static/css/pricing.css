@@ -1,0 +1,44 @@
+
+
+.card {
+    background: black !important;
+}
+
+.card-body{
+    color: rgb(245, 224, 194);
+}
+
+section {
+    margin: 0 auto;
+    margin-top: 2.5%;
+    max-width: 1300px;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.container{
+    display: inline;
+}
+
+.row {
+    padding-bottom: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+.btn {
+    margin-top: 10px;
+}
+
+@media (max-width:1300px) {
+
+    section {
+        margin: 2.5%;
+    }
+    
+}

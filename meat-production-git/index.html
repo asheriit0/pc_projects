@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/header-and-footer.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="static/files/favicon_io/site.webmanifest">
+
+    <title>MeatЕater</title>
+
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="width: 100%;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="static/images/Mask group.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="width: 2em;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Каталог
+                            </a>
+                            <ul class="dropdown-menu" style="background: black;">
+                                <li><a class="dropdown-item  text-white" href="goods/pricing.html">Все товары</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" style="background: grey;">
+                                </li>
+                                <li><a class="dropdown-item  text-white" href="goods/pricing.html">Курица</a>
+                                </li>
+                                <li><a class="dropdown-item  text-white" href="goods/pricing.html">Свинина</a></li>
+                                <li><a class="dropdown-item  text-white" href="goods/pricing.html">Говядина</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                href="#">Корзина</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="users/login.html">Войти</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Мой профиль
+                            </a>
+                            <ul class="dropdown-menu" style="background: black;">
+                                <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
+                                <li><a class="dropdown-item  text-white" href="users/profile.html">Личный кабинет</a>
+                                </li>
+                                <li><a class="dropdown-item  text-white" href="#">Админ панель</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" style="background: grey;">
+                                </li>
+                                <li><a class="dropdown-item  text-white" href="#">Выйти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: black;">
+                <div class="modal-header" style="border-color: grey;">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(245, 224, 194);">Корзина
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="background-color: aliceblue;"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="card mb-3 text-bg-light shadow-lg" style="border: none;">
+                        <div class="card-header" style="background: grey; border-color: black;">
+                            <h5 class="card-title" style="color: rgb(245, 224, 194);">Товар</h5>
+                        </div>
+                        <ul class="list-group list-group-flush" style="border-color: black;">
+                            <li class="list-group-item" style="background: rgb(158, 158, 158); border-color: black;">
+                                <div class="row text-center">
+                                    <div class="col p-0">
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-dark btn-sm decrement"
+                                                    data-cart-id="" data-cart-change-url="">-</button>
+                                            </span>
+                                            <input type="text" class="form-control number" value="1" readonly>
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-dark btn-sm increment"
+                                                    data-cart-id="" data-cart-change-url="">+</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col p-0" style="color: rgb(245, 224, 194);">
+                                        <p>x 100.00 = </p>
+                                    </div>
+                                    <div class="col p-0" style="color: rgb(245, 224, 194);"><strong>100.00 $</strong>
+                                    </div>
+                                    <div class="col p-0">
+                                        <a href="#" class="remove-from-cart" data-cart-id="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(99, 35, 35);"
+                                                width="20" height="20" fill="currentColor" class="bi bi-trash"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                                <path
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card mb-3 shadow-lg">
+                        <div class="card-footer rounded" style="background: rgb(158, 158, 158);">
+                            <p class="float-left" style="color: rgb(245, 224, 194);">Итого <strong>1</strong> товар(а)
+                                на сумму</p>
+                            <h4 class="float-left" style="color: rgb(245, 224, 194);"><strong>100.00 $</strong></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <a type="button" class="btn btn-primary"
+                        style="background: rgb(99, 35, 35); border: none; color: rgb(245, 224, 194);"
+                        href="../meat-production-git/orders/create_order.html">Оформить заказ</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <section>
+
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="anim" class="card bg-dark text-white abc">
+                    <img src="static/images/right-meat.png" class="card-img" alt="...">
+                    <div id="main" class="card-img-overlay col-4 text-center">
+                        <div class="row">
+                            <h1 class="card-title">Мясоед</h1>
+                            <h2 class="card-title">Мясная лавка</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-dark text-white position-relative">
+                    <img src="static/images/Rectangle 4.png" class="card-img" alt="...">
+                    <div id="second-row" class="card-img-overlay">
+                        <div class="position-absolute top-0 start-0">
+                            <div class="overflow-auto">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 start-50 translate-middle-x">
+                            <div class="overflow-auto text-center" style="margin-top: 10px;">
+                                <div id="h1" class="h1" style="color: rgba(200, 164, 148, 1);">доставка</div>
+                                <p class="h5" style="color: rgba(188, 162, 152, 1);">по москве и области</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 end-0 translate-middle-x">
+                            <div id="sale" class="overflow-auto text-center sale" style="margin-top: 20px;">
+                                <div id="h2" class="h2" style="color: rgba(224, 68, 57, 1);">скидка 15%</div>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 start-0">
+                            <div class="overflow-auto">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                            <div class="overflow-auto text-center" style="margin-bottom: 10px;">
+                                <p style="color: rgba(87, 87, 87, 1);">свежее мясо за 60 минут</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 end-0 translate-middle-x">
+                            <div class="overflow-auto text-center" style="margin-bottom: 20px;">
+                                <p style="color: rgba(201, 98, 87, 1);">на первый</p>
+                                <p style="color: rgba(201, 98, 87, 1);">заказ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div id="bottom" class="row">
+            <div class="col-lg-4">
+                <div class="foot card bg-dark text-white">
+                    <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="static/images/carousel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/carousel2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/carousel3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="foot card bg-dark text-white">
+                    <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="static/images/carousel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/carousel2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/carousel3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="foot card bg-dark text-white">
+                    <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="static/images/carousel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/carousel2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="static/images/carousel3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="card">
+                    <button class="card-header" style="border: none; text-align: left;" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                        Почему вам стоит выбрать именно наше мясо?
+                    </button>
+
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body" style="border: none;">
+                            Выбор нашего мяса обусловлен высоким качеством, безопасностью и свежестью продукции. Наша
+                            продукция проходит строгий контроль качества, соответствует стандартам безопасности и имеет
+                            отличный вкус.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="card-header" style="border: none; text-align: left;" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                        Как выбрать подходящий кусок мяса
+                        для конкретного блюда?
+                    </button>
+
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body" style="border: none;">
+                            Мясо у нас остается свежим благодаря строгому контролю качества, соблюдению стандартов
+                            хранения, использованию специализированных упаковочных материалов и быстрой доставке до
+                            потребителя, посредством расположения складов по всей области.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="card-header" style="border: none; text-align: left;" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                        Как нам удается сохранить
+                        свежесть мяса?
+                    </button>
+
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body" style="border: none;">
+                            Для выбора подходящего куска мяса для конкретного блюда рекомендуется учитывать тип мяса,
+                            текстуру, мраморность, метод приготовления и желаемую степень прожарки. Например, для жарки
+                            на гриле подойдут относительно тонкие куски с малым количеством жира, а для тушения или
+                            варки - более мягкие и жирные части мяса. Важно учитывать предпочтения вкуса и рецепт блюда
+                            при выборе определенного куска мяса.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div id="footer" class="row">
+                <div class="col-lg-4 col-mg-12 footer-text text-center" col-mg-12>
+                    <p>Copyright © MeatЕater<br>Developed by
+                        asheriit0</p>
+                </div>
+                <div class="col-lg-4 col-mg-12 footer-text text-center">
+                    <p>Contacts<br>Job<br>Our Team</p>
+                </div>
+                <div class="col-lg-4 col-mg-12 media-links">
+                    <img style="width: 40px; margin-inline: 1em;" src="static/files/inst-icon.png" alt="">
+                    <img style="width: 40px; margin-inline: 1em;" src="static/files/tg-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    
+
+
+</body>
+
+</html>

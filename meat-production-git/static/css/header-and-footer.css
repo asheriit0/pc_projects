@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Yeseva&One&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Yeseva One, serif;
+}
+
+
+/* navbar start */
+
+.navbar.navbar-expand-lg.bg-body-tertiary.fixed-top {
+    background-color: rgb(15, 15, 15) !important;
+}
+
+.navbar-brand img {
+    width: 2em;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(245, 224, 194);
+}
+
+.modal-content {
+    background-color: rgba(35, 39, 42, 1);
+}
+
+.modal-footer {
+    border: none;
+}
+
+
+.nav-item.dropdown a{color: rgb(245, 224, 194) !important;}
+
+.dropdown-item:hover {
+    background-color: grey;
+    }
+    
+.dropdown-item.active, .dropdown-item:active {
+    background-color: rgb(99, 35, 35);
+    }
+
+.modal-footer button {color: rgb(245, 224, 194);}
+
+
+
+
+
+/* navbar end */
+
+/* body start */
+
+body {
+    margin-top: 4.5em;
+    background: rgb(99, 35, 35);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row {
+    padding-bottom: 30px;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    margin-top: auto;
+    
+}
+
+.footer-text {
+    color: rgb(245, 224, 194);
+    margin: auto auto;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    padding-top: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+
+@media (max-width:990px) {
+    .footer-text {
+        margin-top: 1rem;
+    }
+
+    .media-links {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:1300px) {
+
+    section {
+        margin: 2.5%;
+    }
+    
+}
+
